@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import wavs from './sounds.js'
 function App() {
+  const title = 'React Drum Kit!'
+
+  const sounds = []
+  for(const [index, sound] of wavs.entries()){
+    sounds.push(<audio controls data-key={sound.key} src={`/sounds/${sound.file}`} key={index}></audio>)
+  }
+
+  window.addEventListener('keydown', function(e){
+    if(e.key){
+      const audio = document.querySelector(`audio[data-key="${e.key}"`);
+      if(!audio) return;
+
+      audio.play()
+    }
+  })
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>{title}</h1>
+          { sounds }
       </header>
+      <main>
+
+      </main>
     </div>
   );
 }
