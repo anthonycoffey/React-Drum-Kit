@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/JavaScript30_ReactDrumKit_01/static/css/main.f13068c2.chunk.css",
+    "main.css": "/JavaScript30_ReactDrumKit_01/static/css/main.706531ab.chunk.css",
     "main.js": "/JavaScript30_ReactDrumKit_01/static/js/main.24749363.chunk.js",
     "main.js.map": "/JavaScript30_ReactDrumKit_01/static/js/main.24749363.chunk.js.map",
     "runtime~main.js": "/JavaScript30_ReactDrumKit_01/static/js/runtime~main.3904075f.js",
@@ -9,10 +9,10 @@
     "static/js/2.f7a8ec4c.chunk.js": "/JavaScript30_ReactDrumKit_01/static/js/2.f7a8ec4c.chunk.js",
     "static/js/2.f7a8ec4c.chunk.js.map": "/JavaScript30_ReactDrumKit_01/static/js/2.f7a8ec4c.chunk.js.map",
     "index.html": "/JavaScript30_ReactDrumKit_01/index.html",
-    "precache-manifest.5025db8927a7dc06110c985d9fc1522d.js": "/JavaScript30_ReactDrumKit_01/precache-manifest.5025db8927a7dc06110c985d9fc1522d.js",
+    "precache-manifest.5ca43554b6ac324c07725860af507e6a.js": "/JavaScript30_ReactDrumKit_01/precache-manifest.5ca43554b6ac324c07725860af507e6a.js",
     "service-worker.js": "/JavaScript30_ReactDrumKit_01/service-worker.js",
     "static/css/2.b71839fe.chunk.css.map": "/JavaScript30_ReactDrumKit_01/static/css/2.b71839fe.chunk.css.map",
-    "static/css/main.f13068c2.chunk.css.map": "/JavaScript30_ReactDrumKit_01/static/css/main.f13068c2.chunk.css.map",
+    "static/css/main.706531ab.chunk.css.map": "/JavaScript30_ReactDrumKit_01/static/css/main.706531ab.chunk.css.map",
     "static/media/brands.min.css": "/JavaScript30_ReactDrumKit_01/static/media/fa-brands-400.fe9d62e0.woff"
   }
 }
