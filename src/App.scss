@@ -26,7 +26,7 @@ body {
   App stylesheet!
  */
 .App {
-  font-size: 2rem;
+  font-size: 1.86rem;
   header {
     font-family: monospace;
     padding: 0 1rem;
@@ -96,12 +96,16 @@ body {
 
     .instructions {
       max-width: 960px;
+      a {
+        font-family: monospace;
+      }
     }
 
   }
 
   footer {
     position: absolute;
+    padding-bottom: 1rem;
     bottom: 0;
     width: 100%;
     color: #FFFFFF;

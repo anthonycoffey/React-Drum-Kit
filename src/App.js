@@ -76,12 +76,13 @@ class App extends React.Component {
 
         <div className="instructions">
           <p>You can play the drum sounds by pressing the corresponding key, or by clicking on the button.</p>
-        </div>
 
+        </div>
+        <small><span>(show me the <a href="https://github.com/anthonycoffey/JavaScript30_ReactDrumKit_01" rel="noopener noreferrer" target="_blank">code</a>)</span></small>
         {this.state.sounds}
       </main>
       <footer>
-        <span className="follow-me">Follow Me on Social Media:</span>
+        <span className="follow-me">Follow Me</span>
         <ul>
           <li>
             <i className="fab fa-github-square"></i><a href="https://github.com/anthonycoffey" rel="noopener noreferrer" target="_blank">Github</a>
