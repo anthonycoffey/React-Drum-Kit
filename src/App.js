@@ -10,7 +10,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      title: '🎶 Welcome to the React Drum Kit! 🎶',
+      title: `Welcome to the React Drum Kit!`,
       hashtag: '#JavaScript30',
       project: 'Drum Kit 01',
       author: 'Anthony Coffey',
@@ -21,7 +21,7 @@ class App extends React.Component {
 
     // audio elements
     for(const [index, sound] of wavs.entries()) {
-      this.state.sounds.push(<audio data-key={sound.key} src={`/sounds/${sound.file}`} key={index}></audio>)
+      this.state.sounds.push(<audio data-key={sound.key} src={`sounds/${sound.file}`} key={index}></audio>)
     }
 
     // buttons / key elements
@@ -40,12 +40,12 @@ class App extends React.Component {
     })
   }
 
-
   playSound(k) {
     const audio = document.querySelector(`audio[data-key="${k}"`);
     const key = document.querySelector(`kbd[data-key="${k}"]`);
     if(!audio) return;
     audio.currentTime = 0;
+    console.log(audio)
     audio.play();
     key.classList.add('playing','animated','heartBeat');
     setTimeout(function(){
@@ -64,10 +64,10 @@ class App extends React.Component {
         </div>
       </header>
       <main>
-        <h1>{this.state.title}</h1>
+        <h1><span role="img" aria-label="music notes">🎶</span>{this.state.title}<span role="img" aria-label="music notes">🎶</span></h1>
 
         <div className="introduction">
-          <p><span role="img">👋</span> Hello! My name is Anthony Coffey, and I was inspired by the <a href="https://javascript30.com/">#JavaScript30</a> challenge so I built a drum kit using React. <span role="img">😎</span></p>
+          <p><span role="img" aria-label="wave">👋</span> Hello! My name is Anthony Coffey, and I was inspired to take the <a href="https://javascript30.com/" rel="noopener noreferrer" target="_blank">#JavaScript30</a> challenge so I built a drum kit using React. <span role="img" aria-label="cool">😎</span></p>
         </div>
 
         <div className="keys">
