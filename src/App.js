@@ -75,7 +75,7 @@ class App extends React.Component {
         </div>
 
         <div className="instructions">
-          <p>You can play the drum sounds play pressing the corresponding key on your keyboard, or by clicking/tapping the buttons below.</p>
+          <p>You can play the drum sounds by pressing the corresponding key, or by clicking on the button.</p>
         </div>
 
         {this.state.sounds}
