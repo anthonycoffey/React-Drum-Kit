@@ -54,7 +54,7 @@ body {
     padding: 0 1rem;
     h1 {
       font-size: 3rem;
-      @media (max-width: 768px){
+      @media (max-width: 767px){
         font-size: 2rem;
       }
       margin-bottom: 0;
@@ -74,8 +74,11 @@ body {
       justify-content: space-between;
       .key-wrapper {
         margin: 0 0.5rem;
-        min-width: 100px;
-        height: 100px;
+        width: 99px;
+        height: 99px;
+        @media (max-width: 767px){
+          width: 79px;
+        }
         animation-duration: 0.2s;
         kbd.key{
           margin: 0 auto;
