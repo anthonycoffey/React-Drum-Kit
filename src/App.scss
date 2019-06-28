@@ -27,6 +27,9 @@ body {
  */
 .App {
   font-size: 1.86rem;
+  @media (max-width: 768px){
+    font-size: 1.36rem;
+  }
   header {
     font-family: monospace;
     padding: 0 1rem;
@@ -48,9 +51,12 @@ body {
     text-align: center;
     color: #FFFFFF;
     min-height: 33vw;
-
+    padding: 0 1rem;
     h1 {
       font-size: 3rem;
+      @media (max-width: 768px){
+        font-size: 2rem;
+      }
       margin-bottom: 0;
     }
 
@@ -62,10 +68,14 @@ body {
 
     // keys / buttons
     .keys{
-      display: inline-flex;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
       .key-wrapper {
         margin: 0 0.5rem;
         min-width: 100px;
+        height: 100px;
         animation-duration: 0.2s;
         kbd.key{
           margin: 0 auto;
@@ -77,13 +87,17 @@ body {
           border: 1px solid;
           display: block;
           &.playing {
-            color: lawngreen;
-            border-color: lawngreen;
+            color: #e2dd24;
+            border-color: #e2dd24;
           }
         }
 
         .sound {
-          font-size: 75%;
+          color: #e2dd24;
+          font-size: 70%;
+          text-transform: uppercase;
+          font-weight: bold;
+          letter-spacing: 0.2rem;
           position: relative;
           top: 10px
         }
@@ -104,9 +118,13 @@ body {
   }
 
   footer {
-    position: absolute;
+    @media (min-width: 768px){
+      position: absolute;
+      bottom: 0;
+    }
+
     padding-bottom: 1rem;
-    bottom: 0;
+
     width: 100%;
     color: #FFFFFF;
     display: flex;
@@ -114,17 +132,24 @@ body {
     align-items: center;
 
       .follow-me {
+        @media (max-width: 767px){
+          display: none;
+        }
         font-size: 1.5rem;
         font-family: monospace;
       }
 
       ul {
+        padding: 0;
         margin: 0;
         li {
-          margin: 0 2rem;
+          @media (max-width: 767px){
+            font-size: 1rem;
+          }
+          margin: 0rem;
           display: inline-flex;
           a {
-            margin-left: 10px;
+            margin: 0 10px;
             font-family: monospace;
             display: flex;
             align-content: center;

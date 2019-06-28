@@ -10,7 +10,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      title: `Welcome to the React Drum Kit!`,
+      title: `React Drum Kit!`,
       hashtag: '#JavaScript30',
       project: 'Drum Kit 01',
       author: 'Anthony Coffey',
