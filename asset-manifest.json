@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/JavaScript30_ReactDrumKit_01/static/css/main.38c89f9a.css",
-    "main.js": "/JavaScript30_ReactDrumKit_01/static/js/main.0a192707.js",
-    "static/js/787.0a72aaae.chunk.js": "/JavaScript30_ReactDrumKit_01/static/js/787.0a72aaae.chunk.js",
-    "index.html": "/JavaScript30_ReactDrumKit_01/index.html",
-    "main.38c89f9a.css.map": "/JavaScript30_ReactDrumKit_01/static/css/main.38c89f9a.css.map",
-    "main.0a192707.js.map": "/JavaScript30_ReactDrumKit_01/static/js/main.0a192707.js.map",
-    "787.0a72aaae.chunk.js.map": "/JavaScript30_ReactDrumKit_01/static/js/787.0a72aaae.chunk.js.map"
+    "main.css": "/React-Drum-Kit/static/css/main.38c89f9a.css",
+    "main.js": "/React-Drum-Kit/static/js/main.1ce82e12.js",
+    "index.html": "/React-Drum-Kit/index.html",
+    "main.38c89f9a.css.map": "/React-Drum-Kit/static/css/main.38c89f9a.css.map",
+    "main.1ce82e12.js.map": "/React-Drum-Kit/static/js/main.1ce82e12.js.map"
   },
   "entrypoints": [
     "static/css/main.38c89f9a.css",
-    "static/js/main.0a192707.js"
+    "static/js/main.1ce82e12.js"
   ]
 }
