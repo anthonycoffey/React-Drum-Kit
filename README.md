@@ -4,8 +4,6 @@ Hello! My name is Anthony Coffey and I was inspired to take the #JavaScript30 ch
 
 [Live Demo](https://anthonycoffey.github.io/React-Drum-Kit/index.html)
 
-Questions? feel free to contact me at anthony[at]coffeywebdev.com
-
 ### Start development server
 
 ```$xslt
