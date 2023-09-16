@@ -2,8 +2,7 @@
 
 Hello! My name is Anthony Coffey and I was inspired to take the #JavaScript30 challenge, so I built this drum kit with React!
 
-[Live Demo](https://anthonycoffey.github.io/JavaScript30_ReactDrumKit_01/index.html)
-
+[Live Demo](https://anthonycoffey.github.io/React-Drum-Kit/index.html)
 
 Questions? feel free to contact me at anthony[at]coffeywebdev.com
 
