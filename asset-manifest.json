@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/React-Drum-Kit/static/css/main.38c89f9a.css",
-    "main.js": "/React-Drum-Kit/static/js/main.1ce82e12.js",
+    "main.css": "/React-Drum-Kit/static/css/main.4c188138.css",
+    "main.js": "/React-Drum-Kit/static/js/main.d63cfa53.js",
     "index.html": "/React-Drum-Kit/index.html",
-    "main.38c89f9a.css.map": "/React-Drum-Kit/static/css/main.38c89f9a.css.map",
-    "main.1ce82e12.js.map": "/React-Drum-Kit/static/js/main.1ce82e12.js.map"
+    "main.4c188138.css.map": "/React-Drum-Kit/static/css/main.4c188138.css.map",
+    "main.d63cfa53.js.map": "/React-Drum-Kit/static/js/main.d63cfa53.js.map"
   },
   "entrypoints": [
-    "static/css/main.38c89f9a.css",
-    "static/js/main.1ce82e12.js"
+    "static/css/main.4c188138.css",
+    "static/js/main.d63cfa53.js"
   ]
 }
