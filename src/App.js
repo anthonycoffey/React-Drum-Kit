@@ -50,7 +50,6 @@ function App() {
     if (!audio) return;
     audio.currentTime = 0;
     audio.play();
-    console.log("bet its here");
     key.classList.add("playing", "animated", "heartBeat");
     setTimeout(() => {
       key.classList.remove("playing", "animated", "heartBeat");
@@ -59,91 +58,116 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <div className="project"></div>
-      </header>
-      <main>
-        <h1 className="greeting">
-          {GREETING}
-          <span role="img" aria-label="music notes">
-            👋
-          </span>
-        </h1>
+      <main className="min-h-screen flex flex-col">
+        <header className="bg-black p-4 shadow-sm">
+          <div className="container mx-auto">
+            <h1 className="text-8xl text-white text-center mt-4 mb-8 font-bold">
+              {GREETING}
+              <span role="img" aria-label="music notes">
+                👋
+              </span>
+            </h1>
 
-        <div className="introduction">
-          <p>
-            <span role="img" aria-label="wave"></span>
-            My name is {AUTHOR}, and this is my React drum kit!
-            <span role="img" aria-label="cool">
-              🥁
-            </span>
-          </p>
-        </div>
+            <div className="introduction">
+              <p className="text-3xl text-white text-center">
+                <span role="img" aria-label="wave"></span>
+                My name is {AUTHOR}, and this is my React drum kit!
+                <span role="img" aria-label="cool">
+                  🥁
+                </span>
+              </p>
+            </div>
+          </div>
+        </header>
+        <section id="drumkit" className="flex-1 bg-black">
+          <div className="container mx-auto my-12">
+            <div className="keys">{keys}</div>
+            {sounds}
+          </div>
+          <div className="instructions">
+            <p className="text-2xl text-center text-white font-mono">
+              You can play the drum sounds by pressing the corresponding key, or
+              by clicking on the button.
+            </p>
+            <div className="text-white text-center uppercase pb-4">
+              <span>
+                <a
+                  href="https://github.com/anthonycoffey/JavaScript30_ReactDrumKit_01"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="mt-2 block text-blue-600 font-mono text-2xl"
+                >
+                  (show me the code)
+                </a>
+              </span>
+            </div>
+          </div>
+        </section>
+        <section id="changelog" className="bg-black p-4 shadow-sm flex-1">
+          <div className="container mx-auto">
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th
+                    scope="col"
+                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Date
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Version
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Change
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-gray-200">
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap">2023-09-21</td>
+                  <td className="px-6 py-4 whitespace-nowrap">1.1.1</td>
+                  <td className="px-6 py-4">
+                    implemented TailwindCSS and reworked layout for responsive
+                    design and cleanup of markup and stylesheet
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap">2023-09-15</td>
+                  <td className="px-6 py-4 whitespace-nowrap">1.1.0</td>
+                  <td className="px-6 py-4">updated for react v18</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap">2019-06-28</td>
+                  <td className="px-6 py-4 whitespace-nowrap">1.0.0</td>
+                  <td className="px-6 py-4">Initial release</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <footer className="bg-black text-white py-4">
+          <div className="container mx-auto text-center">
+            <p className="uppercase font-mono text-xl mb-2">
+              want to get in touch?
+            </p>
 
-        <div className="keys">{keys}</div>
-
-        <div className="instructions">
-          <p>
-            You can play the drum sounds by pressing the corresponding key, or
-            by clicking on the button.
-          </p>
-        </div>
-        <small>
-          <span>
-            (show me the{" "}
             <a
-              href="https://github.com/anthonycoffey/JavaScript30_ReactDrumKit_01"
+              className="bg-white px-20 py-5 text-black uppercase font-bold inline-block"
+              href="https://linktr.ee/coffeycodes"
               rel="noopener noreferrer"
               target="_blank"
             >
-              code
+              Click Here
             </a>
-            )
-          </span>
-        </small>
-        {sounds}
-        <hr />
-        <table className="changelog-table">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Version</th>
-              <th>Change</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2023-09-15</td>
-              <td>1.1.0</td>
-              <td>updated for react v18</td>
-            </tr>
-            <tr>
-              <td>2019-06-28</td>
-              <td>1.0.0</td>
-              <td>Initial release</td>
-            </tr>
-          </tbody>
-        </table>
+          </div>
+        </footer>
       </main>
-      <footer>
-        <span className="pre-follow">want to get in touch?</span>
-        <span className="follow-me">
-          <a
-            href="https://linktr.ee/coffeycodes"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="1em"
-              viewBox="0 0 448 512"
-            >
-              <path d="M210.6 5.9L62 169.4c-3.9 4.2-6 9.8-6 15.5C56 197.7 66.3 208 79.1 208H104L30.6 281.4c-4.2 4.2-6.6 10-6.6 16C24 309.9 34.1 320 46.6 320H80L5.4 409.5C1.9 413.7 0 419 0 424.5c0 13 10.5 23.5 23.5 23.5H192v32c0 17.7 14.3 32 32 32s32-14.3 32-32V448H424.5c13 0 23.5-10.5 23.5-23.5c0-5.5-1.9-10.8-5.4-15L368 320h33.4c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16L344 208h24.9c12.7 0 23.1-10.3 23.1-23.1c0-5.7-2.1-11.3-6-15.5L237.4 5.9C234 2.1 229.1 0 224 0s-10 2.1-13.4 5.9z" />
-            </svg>
-            Visit My Linktr.ee
-          </a>
-        </span>
-      </footer>
     </div>
   );
 }

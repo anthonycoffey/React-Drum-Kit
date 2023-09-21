@@ -1,6 +1,6 @@
 {
   "name": "React-Drum-Kit",
-  "version": "0.1.0",
+  "version": "1.1.1",
   "private": true,
   "homepage": "https://anthonycoffey.github.io/React-Drum-Kit/",
   "dependencies": {
@@ -46,6 +46,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "sass": "^1.67.0"
+    "sass": "^1.67.0",
+    "tailwindcss": "^3.3.3"
   }
 }
