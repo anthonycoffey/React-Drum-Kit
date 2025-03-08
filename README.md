@@ -1,14 +1,8 @@
-## React Drum Kit
+## React Drum Machine
 
 Hello! My name is Anthony Coffey and this is my React drum kit. I originally built this when I was learning React coming from Vue.js and have recently updated the project to demonstrate my expertise.
 
-I hope you enjoy this simple drum kit I made! Feel free to use this code however you'd like!
-
-### Stack:
-
-- React
-- SASS
-- TailwindCSS
+I hope you enjoy this simple drum machine I made! Feel free to use this code however you'd like!
 
 [Live Demo](https://anthonycoffey.github.io/React-Drum-Kit/index.html)
 
@@ -17,25 +11,23 @@ I hope you enjoy this simple drum kit I made! Feel free to use this code however
 ### Install dependencies
 
 ```$xslt
-npm install
+bun install
 ```
 
 ### Start development server
 
 ```$xslt
-npm run start
+bun run start
 ```
 
 ### Build for Production
 
 ```$xslt
-npm run build
+bun run build
 ```
 
 ### Deploy to Github Page
 
 ```$xslt
-npm run deploy
+bun run deploy
 ```
-
-check out the [documentation](https://facebook.github.io/create-react-app/docs/deployment#github-pages-https-pagesgithubcom) for deployment to GitHub Pages for more info
