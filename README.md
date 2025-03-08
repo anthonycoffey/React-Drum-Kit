@@ -4,7 +4,7 @@ Hello! My name is Anthony Coffey and this is my React drum kit. I originally bui
 
 I hope you enjoy this simple drum machine I made! Feel free to use this code however you'd like!
 
-[Live Demo](https://anthonycoffey.github.io/React-Drum-Kit/index.html)
+[Live Demo](https://anthonycoffey.github.io/React-Drum-Kit)
 
 ## Installation / Development
 
